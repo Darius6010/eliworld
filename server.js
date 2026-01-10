@@ -1,6 +1,6 @@
 const express = require("express");
 const http = require("http");
-const {Server} = require("Socket.io");
+const {Server} = require("socket.io");
 
 const app = express();
 const server = http.createServer(app);
@@ -24,3 +24,4 @@ io.on("connection", (socket) => {
 server.listen(3000, () => {
     console.log("Server is running on http://localhost:3000");
 });
+
